@@ -77,33 +77,41 @@ export default function App() {
 
   return (
     <div id="chart-0" className="flex flex-col bg-gray-900 text-white items-center">
-      <div className="flex flex-col h-screen w-1/2 justify-center p-12 gap-5">
+      <div className="flex flex-col h-screen sm:w-3/5 justify-center p-2 sm:p-12 gap-5">
         <h1 className="text-4xl font-bold text-center">Visualization
-          of <a href="https://stackoverflow.com/" className="hover:underline">Stack Overflow</a> Data
+          of <a href="https://stackoverflow.com/" target="_blank" className="hover:underline">Stack Overflow</a> Data
         </h1>
         <p className="text-xl text-center">This project is a part
-          of <b>Data Wrangling & Visualization</b> course <br/> at Innopolis University
-          by <a href="https://rustam-lukmanov.com" className="text-sky-600 hover:underline">Rustam A. Lukmanov</a></p>
+          of <b>Data Wrangling & Visualization</b> course <br/> at <a
+            href="https://innopolis.university" target="_blank" className="text-sky-600 hover:underline">
+            Innopolis University</a> by <a
+            href="https://rustam-lukmanov.com" target="_blank" className="text-sky-600 hover:underline">
+            Rustam A. Lukmanov</a></p>
         <hr className="my-2"/>
         <h2 className="text-2xl font-bold text-center">Project Description</h2>
         <p className="text-xl text-justify">
           This web application is part of a data analysis that aims to gather and visualize the data regarding questions
-          from
-          the <a href="https://stackoverflow.com/questions" className="text-sky-600 hover:underline">Stack
-          Overflow</a> website.
-          Data is scraped
-          using <a href="https://scrapy.org/" className="text-sky-600 hover:underline">Scrapy Python library</a>, then
-          cleaned using <a href="https://pandas.pydata.org/" className="text-sky-600 hover:underline">Pandas</a> and
-          stored in a local <a href="https://www.sqlite.org/"
+          from the <a href="https://stackoverflow.com/questions" target="_blank"
+                      className="text-sky-600 hover:underline">Stack Overflow</a> website.
+          Data is scraped using <a href="https://scrapy.org/" target="_blank"
+                                   className="text-sky-600 hover:underline">Scrapy Python library</a>, then
+          cleaned using <a href="https://pandas.pydata.org/" target="_blank"
+                           className="text-sky-600 hover:underline">Pandas</a> and
+          stored in a local <a href="https://www.sqlite.org/" target="_blank"
                                className="text-sky-600 hover:underline">SQLite</a> database.
         </p>
         <p className="text-xl text-justify">
           Data is served
-          using <a href="https://fastapi.tiangolo.com/" className="text-sky-600 hover:underline">FastAPI</a>.
-          The frontend is powered
-          by <a href="https://www.typescriptlang.org" className="text-sky-600 hover:underline">TypeScript</a> using <a
-          href="https://react.dev/" className="text-sky-600 hover:underline">React</a> and <a
-          href="https://d3js.org" className="text-sky-600 hover:underline">D3.js</a> libraries.
+          using <a href="https://fastapi.tiangolo.com/" target="_blank"
+                   className="text-sky-600 hover:underline">FastAPI</a>.
+          The frontend is powered by <a href="https://www.typescriptlang.org" target="_blank"
+                                        className="text-sky-600 hover:underline">TypeScript</a> using <a
+          href="https://react.dev/" target="_blank" className="text-sky-600 hover:underline">React</a> and <a
+          href="https://d3js.org" target="_blank" className="text-sky-600 hover:underline">D3.js</a> libraries.
+        </p>
+        <p className="text-xl text-justify">
+          Git Repository: <a href="https://github.com/markovav-official/DWVProject" target="_blank"
+                             className="text-sky-600 hover:underline">https://github.com/markovav-official/DWVProject</a>
         </p>
 
         <div className="flex-grow"></div>
@@ -113,7 +121,7 @@ export default function App() {
           </div>
           <div className="flex flex-col items-center">
             <p className="text-xl font-bold">Andrei Markov</p>
-            <a href="tg://resolve?domain=markovav_official" className="text-[#0088cc] mb-3">
+            <a href="tg://resolve?domain=markovav_official" target="_blank" className="text-[#0088cc] mb-3">
               @markovav_official
             </a>
             <p className="text-sm">Innopolis University</p>
